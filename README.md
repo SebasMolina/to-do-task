@@ -45,10 +45,10 @@
 
 7. **Refinamiento UI/UX y funcionalidades**
    - Se modernizó el formulario de agregar tareas con un diseño más atractivo y responsivo.
-   - Se eliminó el checkbox de las tareas (no tenía función útil visible).
+   - Se eliminaron elementos innecesarios como el checkbox de las tareas.
    - El botón "Eliminar" de cada tarea fue reemplazado por un ícono de X con tooltip.
-   - Se mejoró la disposición y el estilo de las tarjetas de tareas.
-   - Ahora las tareas se muestran en un grid de hasta 5 por fila, adaptándose a pantallas más pequeñas (responsive grid).
+   - Las tarjetas de tarea ahora son más grandes, con borde azul destacado y mayor presencia visual.
+   - Se mejoró la disposición y el estilo de las tarjetas, mostrándose en un grid de hasta 5 por fila (responsive).
    - Se ajustaron los estilos para una experiencia más limpia y profesional.
    - Se documentó cada cambio importante en este README para seguimiento.
 
