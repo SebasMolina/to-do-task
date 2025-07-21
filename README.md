@@ -1,11 +1,10 @@
-
 # TaskMaster - Documentación del Proyecto
 
 ## Estructura actual
 - **backend/**: Servidor Node.js + Express para la API de tareas.
 - **todo-frontend/**: Aplicación React (nuevo frontend principal).
   - **public/**: Archivos HTML originales migrados como respaldo.
-  - **src/**: Código fuente React (App.js, index.js, index.css).
+  - **src/**: Código fuente React (App.js, TaskList.js, Home.js, index.js, index.css, App.css).
 
 ## Historia y pasos realizados
 
@@ -32,6 +31,27 @@
    - Se creó `.gitignore` para excluir `node_modules` y otros archivos temporales.
    - Se eliminaron archivos y carpetas obsoletos.
 
+
+6. **Mejoras visuales y estructura en React**
+   - Se creó un archivo de estilos `App.css` personalizado para mejorar la apariencia.
+   - Se redujo el tamaño del logo y se alinearon las tareas.
+   - Se separó la lista de tareas en el componente `TaskList.js`.
+   - Se creó el componente `Home.js` para el formulario de agregar tareas.
+   - Se implementó navegación con React Router (`react-router-dom`).
+   - Ahora la ruta `/` muestra el formulario para agregar tareas y la ruta `/tareas` muestra la lista de tareas.
+   - Se agregó un menú de navegación en el header.
+   - Se documentó la necesidad de instalar React Router con `npm install react-router-dom`.
+
+
+7. **Refinamiento UI/UX y funcionalidades**
+   - Se modernizó el formulario de agregar tareas con un diseño más atractivo y responsivo.
+   - Se eliminó el checkbox de las tareas (no tenía función útil visible).
+   - El botón "Eliminar" de cada tarea fue reemplazado por un ícono de X con tooltip.
+   - Se mejoró la disposición y el estilo de las tarjetas de tareas.
+   - Ahora las tareas se muestran en un grid de hasta 5 por fila, adaptándose a pantallas más pequeñas (responsive grid).
+   - Se ajustaron los estilos para una experiencia más limpia y profesional.
+   - Se documentó cada cambio importante en este README para seguimiento.
+
 ## Cómo ejecutar el proyecto
 
 ### Backend
@@ -50,9 +70,13 @@
    npm install
    npm start
    ```
+   Si es la primera vez que usas navegación, instala React Router:
+   ```
+   npm install react-router-dom
+   ```
 3. Abre el navegador en `http://localhost:3000` (o el puerto que indique la terminal).
 
-La app React se conecta automáticamente al backend para mostrar, agregar, marcar y eliminar tareas.
+La app React se conecta automáticamente al backend para mostrar, agregar, marcar y eliminar tareas. Usa el menú para navegar entre agregar tareas y ver la lista.
 
 ---
 
